@@ -1,0 +1,39 @@
+{
+  "name": "elanode/file-parsers",
+  "description": "File parsers for Elanode",
+  "type": "library",
+  "require": {
+    "league/csv": "^9.7"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Elanode\\FileParsers\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Elanode\\FileParsers\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Elanode\\FileParsers\\FileParsersServiceProvider"
+      ],
+      "aliases": {
+        "CsvParser": "Elanode\\FileParsers\\Facades\\CsvParser"
+      }
+    }
+  },
+  "authors": [
+    {
+      "name": "Jason Chan",
+      "email": "jasonnchann24@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.5"
+  }
+}
